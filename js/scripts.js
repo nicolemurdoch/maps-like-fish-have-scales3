@@ -12,7 +12,7 @@ var map = new mapboxgl.Map({
 map.addControl(new mapboxgl.NavigationControl());
 
 var popup = new mapboxgl.Popup({ offset: 40 })
-  .setText('Hi Web Mapping 2019 Class!');
+  .setText('scaly fish and scaly maps - geo puns arent lame at all!');
 
 var marker = new mapboxgl.Marker()
   .setLngLat([-73.969145,40.669116])
