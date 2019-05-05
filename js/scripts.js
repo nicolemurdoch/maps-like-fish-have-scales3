@@ -1,4 +1,4 @@
-// sets up my mapbox access token so they can track my usage of their basemap services
+// setup of mapbox access token.
 mapboxgl.accessToken = 'pk.eyJ1Ijoibmljb2xlbXVyZG9jaCIsImEiOiJjanV4MHpkcGkwaTllNDNzMGY1dWM5OXdvIn0.L10-eZL5K7-c8d7WemjfVg';
 
 var map = new mapboxgl.Map({
@@ -8,17 +8,18 @@ var map = new mapboxgl.Map({
   zoom: 9.5,
 });
 
-// Add zoom and rotation controls to the map.
+// zoom and rotation tools are added to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
 var popup = new mapboxgl.Popup({ offset: 40 })
-  .setText('Dial up the volume on these NYC music joints!'');
+  .setText('Dial up the volume on these NYC music joints!');
 
 var marker = new mapboxgl.Marker()
   .setLngLat([-73.952408,40.726966])
   .setPopup(popup)
   .addTo(map);
 
+//adding marker tools and colors to depict different music venue atmospheres.
 nycMusicSpots.forEach(function(venueData) {
 
   var thisVenuesColor = 'steelblue';
