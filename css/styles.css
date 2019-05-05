@@ -2,7 +2,7 @@
   height: 500px;
   width: 500px;
   background: lightgray;
-  margin: 0 auto;
+  margin-right: 40px;
 }
 
 body {
@@ -11,4 +11,8 @@ background-image: url("https://images.unsplash.com/photo-1508700115892-45ecd05ae
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: 0% 100%;
+font-family: sans-serif;
+font-size: 20px
+color: #FFFFFF;
+margin-left: 40px;
 }
