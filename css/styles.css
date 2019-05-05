@@ -4,3 +4,18 @@
   background: lightgray;
   margin: 0 auto;
 }
+
+body {
+  font-family: sans-serif, Charcoal, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 0px;
+  color: #00213a;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+  margin-left: 40px;
+  background: #4D4D4D;
+}
