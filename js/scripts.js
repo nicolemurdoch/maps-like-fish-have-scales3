@@ -3,8 +3,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibmljb2xlbXVyZG9jaCIsImEiOiJjanV4MHpkcGkwaTllN
 
 var map = new mapboxgl.Map({
   container: 'mapContainer',
-  style: 'mapbox://styles/mapbox/light-v9',
-  center: [-73.98, 40.70],
+  style: 'mapbox://styles/mapbox/dark-v10',
+  center: [-73.952408,40.726966],
   zoom: 9.5,
 });
 
@@ -12,26 +12,26 @@ var map = new mapboxgl.Map({
 map.addControl(new mapboxgl.NavigationControl());
 
 var popup = new mapboxgl.Popup({ offset: 40 })
-  .setText('Hi Web Mapping 2019 Class!');
+  .setText('Dial up the volume on these NYC music joints!'');
 
 var marker = new mapboxgl.Marker()
-  .setLngLat([-73.969145,40.669116])
+  .setLngLat([-73.952408,40.726966])
   .setPopup(popup)
   .addTo(map);
 
-studentPizzaShops.forEach(function(studentData) {
+nycMusicSpots.forEach(function(venueData) {
 
-  var thisStudentsColor = 'steelblue';
-  if (studentData.nyuprogram === 'wagner') thisStudentsColor = 'orange';
-  if (studentData.nyuprogram === 'cusp') thisStudentsColor = 'purple';
-  if (studentData.nyuprogram === 'adjunct') thisStudentsColor = 'green';
-  if (studentData.nyuprogram === 'global liberal studies') thisStudentsColor = 'yellow';
+  var thisVenuesColor = 'steelblue';
+  if (venueData.venueAtmosphere === 'funky') thisVenuesColor = 'orange';
+  if (venueData.venueAtmosphere === 'chill') thisVenuesColor = 'purple';
+  if (venueData.venueAtmosphere === 'smorgasbord') thisVenuesColor = 'green';
+  if (venueData.venueAtmosphere === 'highenergy') thisVenuesColor = 'yellow';
 
   new mapboxgl.Marker({
-    color: thisStudentsColor,
+    color: thisVenuesColor,
   })
-    .setLngLat([studentData.lng, studentData.lat])
+    .setLngLat([venueData.lng, venueData.lat])
     .setPopup(new mapboxgl.Popup({ offset: 40 })
-      .setText(`${studentData.name} says their favorite pizza shop is ${studentData.favoritepizzashop}`))
+      .setText(`${venueData.name} is the venue to check out if you dig ${venueData.genres}`))
     .addTo(map);
 })
