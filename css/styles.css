@@ -1,8 +1,8 @@
 #mapContainer {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   background: lightgray;
-  margin-left: 15%;
+  margin: 0 auto;
 }
 
 body {
@@ -11,9 +11,8 @@ background-image: url("https://images.unsplash.com/photo-1508700115892-45ecd05ae
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: 0% 0%;
-background-size: 100%;
+background-size: contain;
 font-family: sans-serif;
 font-size: 20px
 color: #FFFFFF;
-margin-left: 40px;
 }
