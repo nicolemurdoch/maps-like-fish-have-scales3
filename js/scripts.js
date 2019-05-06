@@ -5,7 +5,7 @@ var map = new mapboxgl.Map({
   container: 'mapContainer',
   style: 'mapbox://styles/mapbox/dark-v10',
   center: [-73.952408,40.726966],
-  zoom: 9.5,
+  zoom: 10,
 });
 
 // zoom and rotation tools are added to the map.
